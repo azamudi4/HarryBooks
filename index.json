@@ -1,0 +1,25 @@
+[
+    {
+    "id": 1,
+    "imgUrl": "https://imagessl2.casadellibro.com/a/l/t7/62/9788498382662.jpg",
+    "Titulo": "Harry Potter y la Piedra Filosofal",
+    "CantidadDisponible": 15,
+    "Precio": 50000,
+    "Agregar":""
+    },
+    {
+    "id": 2,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/91B4rhtUevL.jpg",
+    "Titulo": "Harry Potter y el Misterio Del Príncipe",
+    "CantidadDisponible": "Agotado",
+    "Agregar":""
+    },
+    {
+    "id": 3,
+    "imgUrl": "https://pmpub-catalogue.s3-eu-west-1.amazonaws.com/covers/web/9781781101339.jpg",
+    "Titulo": "Harry Potter y el Prisionero de Azkaban",
+    "CantidadDisponible": 10,
+    "Precio":45000,
+    "Agregar":""
+}
+    ]

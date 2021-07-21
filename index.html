@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Books</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Harry Books - Tienda Online</h1>
+        <hr>
+        <div style="display: flex; justify-content: space-between; margin: 0 0 50px 0;">
+        <h2>Libros Diosponibles</h2>
+        <a href="carrito.html" class="btn btn-light">Ir al carrito</a>
+    </div>
+        <div class="row" id="itemsList"></div>
+    </div>
+
+    <template id="template-card" class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-12 mb-2 col-md-4">
+            <img src="" class="card-img-top" alt="" style="width: 150px; height: 250px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+
+            <h5 class="card-title">Titulo</h5>
+                
+            <div style="display: flex; flex-wrap: wrap;">
+              <label>Cantidad Disponible:</label>
+              <p class="card-cantidad" style="margin-left: 5px;">CantidadDisponible</p>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap;">
+              <label>Precio:</label>
+              <p class="card-precio" style="margin-left: 5px;">Precio</p>
+            </div>
+
+            <div style="flex-flow: column;">
+              <label>Agregar al carrito</label>
+                <input name="AgregarCarrito" class="card-carrito" type="number" style="width: 50px;">
+            </div>
+
+              <button class="button">Agregar</button>
+            </div>
+          </div>
+        </div>
+    </template>
+
+    <div class="container" >
+      <h1>Harry Books - Tienda Online</h1>
+      <hr>
+      <h2>Carrito de compras</h2>
+      </div>
+    
+    <table class="table container">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Libro</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Valor Unitario</th>
+          <th scope="col"> Valor Total</th>
+        </tr>
+      </thead>
+      <tbody id="Libros"></tbody>
+      <tfoot>
+        <tr id="footer">
+          <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <template id="template-footer">
+      <td>
+        <button class="Cancelar" id="Cancelar-compra">
+           Cancelar compra
+        </button>
+    </td>
+      <td>
+        <button class="Pagar" id="Confirmar-compra">
+           Confirmar compra
+        </button>
+    </td>
+    <th scope="row" colspan="2">Valor total de la compra:</th>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+  </template>
+  
+  <template id="template-carrito">
+    <tr>
+      <th scope="row">id</th>
+      <td>Café</td>
+      <td>1</td>
+      <td class="td2">
+        50000
+      </td>
+      <td>$ <span>50000</span></td>
+    </tr>
+  </template>
+
+
+
+    <script src="index.js"></script>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script> 
+</body>
+</html>
